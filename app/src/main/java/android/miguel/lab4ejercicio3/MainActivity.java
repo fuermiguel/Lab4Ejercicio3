@@ -12,16 +12,16 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText et1, et2, et3;
+    //private EditText et1, et2, et3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et1 = (EditText) findViewById(R.id.et1);
+        /*et1 = (EditText) findViewById(R.id.et1);
         et2 = (EditText) findViewById(R.id.et2);
-        et3 = (EditText) findViewById(R.id.et3);
+        et3 = (EditText) findViewById(R.id.et3);*/
     }
 
     public void alta(View v) {
