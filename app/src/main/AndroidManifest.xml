@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Alta" />
+        <activity android:name=".ConsultaCodigo" />
+        <activity android:name=".ConsultaDescripcion" />
+        <activity android:name=".BajaCodigo" />
+        <activity android:name=".Modificacion" />
+        <activity android:name=".VerRegistros"></activity>
     </application>
 
 </manifest>
