@@ -25,16 +25,17 @@ public class VerRegistros extends AppCompatActivity {
 
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "administracion", null, 1);
-        SQLiteDatabase bd = admin.getWritableDatabase();
+        SQLiteDatabase bd = admin.getReadableDatabase();
 
-        Cursor fila = bd.rawQuery("select descripcion,precio from articulos", null);
+        Cursor fila = bd.rawQuery("select codigo,descripcion,precio from articulos", null);
 
         ArrayList registros = new ArrayList();
 
 
         if (fila.moveToFirst()) {
             do {
-                registros.add(fila.getString(0) + " ---------- " +fila.getString(1) + " Euros" );
+                registros.add("Cod.." + fila.getString(0) + "---" +fila.getString(1)+
+                        " ---------- " +fila.getString(2) + " Euros" );
             } while (fila.moveToNext());
 
         }
@@ -46,7 +47,7 @@ public class VerRegistros extends AppCompatActivity {
         bd.close();
     }
 
-    private void salir(View v){
+    public void salir(View v){
         finish();
     }
 }

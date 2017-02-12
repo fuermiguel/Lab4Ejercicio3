@@ -53,11 +53,8 @@ public class Alta extends AppCompatActivity {
 
         Toast.makeText(this, "Se cargaron los datos del artículo",
                 Toast.LENGTH_SHORT).show();
-        finish();
     }
 
-    public void cancelar(View v){
-        finish();
-    }
+
 
 }
